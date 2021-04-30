@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Калькулятор</title>
+    </head>
+    <body>
+        <div ><h1>Простейший Калькулятор</h1></div>
+        <div >
+            <input type="text" value="" id="txt1" readonly onfocus="forfocus1()"> 
+            <input class="znak" type="text" value=""  readonly  id="znak">
+            <input type="text" value="" id="txt2" readonly onfocus="forfocus2()"> = 
+            <input type="text" value="" readonly id="answer" >                     
+        </div>
+        <div class="button">
+            <h4><input type="button" id="n7" value="7" onclick="btn09('n7')">
+            <input type="button" id="n8" value="8" onclick="btn09('n8')">
+            <input type="button" id="n9" value="9" onclick="btn09('n9')">
+            <input type="button" id="sum" value="+" onclick="znak('sum')"></h4>
+
+            <h4><input type="button" id="n4" value="4" onclick="btn09('n4')">
+            <input type="button" id="n5" value="5" onclick="btn09('n5')">
+            <input type="button" id="n6" value="6" onclick="btn09('n6')">
+            <input type="button" id="sub" value="-" onclick="znak('sub')"></h4>
+
+            <h4><input type="button" id="n1" value="1" onclick="btn09('n1')">
+            <input type="button" id="n2" value="2" onclick="btn09('n2')">
+            <input type="button" id="n3" value="3" onclick="btn09('n3')"> 
+            <input type="button" id="mul" value="*" onclick="znak('mul')"></h4>
+
+            <h4><input type="button" id="del" value="C" onclick="del()">
+            <input type="button" id="n0" value="0" onclick="btn09('n0')">
+            <input type="button" id="equal" value="=" onclick="calculations(),forfocus1()">
+            <input type="button" id="div" value="/" onclick="znak('div')"></h4>
+        </div>
+        <script type="text/javascript" src="calc.js"></script>
+    </body> 
+</html>
+ 
+
